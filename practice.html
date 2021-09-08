@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        .photo img{
+            width: 100%;
+            border-radius: 20px;
+        }
+        .photo-frame{
+            width: 300px;
+            height: 200px;
+            border: 3px solid green;
+            border-radius: 20px;
+            position: relative;
+            margin: 10px;
+            overflow: hidden;
+        }
+        .photo-des{
+            position: absolute;
+            width: 300px;
+            top: 0;
+            display: none;
+        }
+        .photo-album{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .photo-frame:hover .photo-des{
+            display: block;
+            background-color: rgba(128, 128, 128, 0.527);
+            border-radius: 20px;
+            width: 300px;
+            height: 200px;
+            text-align: center;
+        }
+        .photo-album h2{
+            background-color: white;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            width: 50%;
+            height: 100vh;
+        }
+        .photo-frame:hover .photo{
+            transform: scale( 1.3 );
+            transition: 1s ;        }
+    </style>
+</head>
+<body>
+    <section class="container">
+        <div class="photo-album">
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images/test.jpg" alt="">
+                </div>
+                <div class="photo-des">
+                    <h2>My Photo</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi error quibusdam ea inventore quasi perspiciatis?</p>
+                </div>
+            </div>
+        </div>
+        <div class="photo-album">
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images/test.jpg" alt="">
+                </div>
+                <div class="photo-des">
+                    <h2>My Photo</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi error quibusdam ea inventore quasi perspiciatis?</p>
+                </div>
+            </div>
+        </div><div class="photo-album">
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images/test.jpg" alt="">
+                </div>
+                <div class="photo-des">
+                    <h2>My Photo</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi error quibusdam ea inventore quasi perspiciatis?</p>
+                </div>
+            </div>
+        </div><div class="photo-album">
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images/test.jpg" alt="">
+                </div>
+                <div class="photo-des">
+                    <h2>My Photo</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi error quibusdam ea inventore quasi perspiciatis?</p>
+                </div>
+            </div>
+        </div><div class="photo-album">
+            <div class="photo-frame">
+                <div class="photo">
+                    <img src="images/test.jpg" alt="">
+                </div>
+                <div class="photo-des">
+                    <h2>My Photo</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi error quibusdam ea inventore quasi perspiciatis?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
